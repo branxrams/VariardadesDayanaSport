@@ -1,11 +1,12 @@
-:root{
-    /* Fonts */
-    --roboto: "Roboto", sans-serif;
+:root {
+  /* Fonts */
+  --roboto: "Roboto", sans-serif;
 
-    /* Colors */
-    --aqua: #80d0c7;
-    --light-grey: #ececec;
-    --grey: #808080;
+  /* Colors */
+  --aqua: #80d0c7;
+  --light-grey: #ececec;
+  --grey: #808080;
+  --HEADER-TEXT-COLOR: #5fc3e1;
 
-    /* Font Size */
+  /* Font Size */
 }
