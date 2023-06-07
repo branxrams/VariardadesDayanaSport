@@ -29,7 +29,7 @@
   border-radius: 10px;
 }
 
-#registerFormInputText {
+.registerFormInputText {
   color: black;
 
   padding-left: 10px;
