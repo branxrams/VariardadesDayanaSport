@@ -1,19 +1,8 @@
-.appHeader {
-  padding-top: 15px;
-
-  flex-direction: column;
-  gap: 15px;
-}
-
 #headerTitle {
   color: var(--HEADER-TEXT-COLOR);
 
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 900;
 
   text-align: center;
-}
-
-#appLogo {
-  width: 100%;
 }
