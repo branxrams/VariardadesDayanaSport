@@ -1,0 +1,8 @@
+#AppHeader {
+  color: var(--HEADER-TEXT-COLOR);
+
+  font-size: 40px;
+  font-weight: 700;
+
+  text-align: center;
+}
