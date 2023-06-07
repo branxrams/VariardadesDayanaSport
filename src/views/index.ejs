@@ -1,11 +1,63 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
+  <%- include("./partials/Head") %>
+  <div></div>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <div id="indexPageContainer" class="centered">
+      <%- include("./partials/Header", {title: 'BIENVENIDO'}) %>
+      <div id="navigationButtonsAndRegisterFrom" class="centered">
+        <%- include("./partials/LoginNavbar") %>
+
+        <form id="registerFormContainer">
+          <div class="registerFormBox">
+            <label for="nombre">Nombre</label>
+            <input
+              type="text"
+              id="registerFormInputText"
+              class="shadows"
+              name="nombre"
+              placeholder="Ingrese su nombre completo"
+              required
+            />
+          </div>
+
+          <div class="registerFormBox">
+            <label for="cargo">Cargo</label>
+            <select id="cargo" name="cargo" required>
+              <option disabled selected>Seleccione el cargo</option>
+              <option value="empleado">Empleado</option>
+              <option value="administrador">Administrador</option>
+            </select>
+          </div>
+
+          <div class="registerFormBox">
+            <label for="celular">Celular</label>
+            <input
+              type="tel"
+              id="registerFormInputText"
+              class="shadows"
+              name="celular"
+              pattern="[0-9]+"
+              placeholder="Ingrese su número de celular"
+              required
+            />
+          </div>
+
+          <div class="registerFormBox">
+            <label for="contrasena">Contraseña</label>
+            <input
+              type="password"
+              id="registerFormInputText"
+              class="shadows"
+              name="contrasena"
+              placeholder="Ingrese su contraseña"
+              required
+            />
+          </div>
+
+          <input type="button" value="Registrarme" />
+        </form>
+      </div>
+    </div>
   </body>
 </html>
