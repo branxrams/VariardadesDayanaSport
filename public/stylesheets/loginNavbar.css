@@ -4,6 +4,8 @@
 }
 
 #LoginNavbarButton {
+  cursor: pointer;
+
   width: 150px;
   height: 42px;
 
