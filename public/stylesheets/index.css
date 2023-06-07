@@ -2,16 +2,25 @@
   height: 100vh;
 
   flex-direction: column;
-  gap: 30px;
 }
 
-#navigationButtonsAndRegisterFrom {
-  background-color: #5fc3e1;
-  height: 100%;
-  max-height: 480px;
+.logoSection {
+  align-items: flex-end;
+}
 
+.logoSection,
+.headerTitleSection {
+  display: flex;
   flex-grow: 1;
+}
+
+.navigationButtonsAndRegisterFormSection {
+  background-color: #5fc3e1;
+  max-height: 500px;
+
+  display: flex;
   flex-direction: column;
+  flex-grow: 2;
   align-items: center;
   justify-content: center;
   gap: 30px;

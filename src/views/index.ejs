@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html>
   <%- include("./partials/Head") %>
-  <div></div>
   <body>
     <div id="indexPageContainer" class="centered">
-      <%- include("./partials/Header", {title: 'BIENVENIDO'}) %>
-      <div id="navigationButtonsAndRegisterFrom" class="centered">
+      <div class="logoSection centered">
+        <%- include("./partials/AppLogo") %>
+      </div>
+
+      <div class="headerTitleSection centered">
+        <%- include("./partials/Header", {title: 'BIENVENIDO'}) %>
+      </div>
+
+      <div class="navigationButtonsAndRegisterFormSection">
         <%- include("./partials/LoginNavbar") %>
 
         <form id="registerFormContainer">
@@ -13,8 +19,8 @@
             <label for="nombre">Nombre</label>
             <input
               type="text"
-              id="registerFormInputText"
-              class="shadows"
+              id="userName"
+              class="registerFormInputText shadows"
               name="nombre"
               placeholder="Ingrese su nombre completo"
               required
@@ -34,8 +40,8 @@
             <label for="celular">Celular</label>
             <input
               type="tel"
-              id="registerFormInputText"
-              class="shadows"
+              id="userPhone"
+              class="registerFormInputText shadows"
               name="celular"
               pattern="[0-9]+"
               placeholder="Ingrese su número de celular"
@@ -47,8 +53,8 @@
             <label for="contrasena">Contraseña</label>
             <input
               type="password"
-              id="registerFormInputText"
-              class="shadows"
+              id="userPassword"
+              class="registerFormInputText shadows"
               name="contrasena"
               placeholder="Ingrese su contraseña"
               required
