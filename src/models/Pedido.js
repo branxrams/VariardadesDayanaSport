@@ -31,5 +31,31 @@ module.exports = (sequelize, dataTypes) => {
 
     const Pedido = sequelize.define(alias, cols, config);
 
+    Pedido.association = models => {
+        Pedido.hasMany(models.Abono, {
+            as: 'abonos',
+            foreignKey: 'pedido_id',
+            timestamps: false
+        });
+
+        Pedido.belongsTo(models.Empleado, {
+            as: 'empleados',
+            foreignKey: 'empleado_id',
+            timestamps: false
+        });
+
+        Pedido.belongsTo(models.Cliente, {
+            as: 'clientes',
+            foreignKey: 'cliente_id',
+            timestamps: false
+        });
+
+        Pedido.hasMany(models.Detalle, {
+            as: 'detalles',
+            foreignKey: 'pedido_id',
+            timestamps: false
+        });
+    }
+
     return Pedido;
 }

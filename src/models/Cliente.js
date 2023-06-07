@@ -30,5 +30,13 @@ module.exports = (sequelize, dataTypes) => {
 
     const Cliente = sequelize.define(alias, cols, config);
 
+    Cliente.association = models => {
+        Cliente.hasMany(models.Pedido, {
+            as: 'pedidos',
+            foreignKey: 'cliente_id',
+            timestamps: false
+        })
+    }
+
     return Cliente;
 }

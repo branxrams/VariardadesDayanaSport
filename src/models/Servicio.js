@@ -20,5 +20,13 @@ module.exports = (sequelize, dataTypes) => {
 
     const Servicio = sequelize.define(alias, cols, config);
 
+    Servicio.association = models => {
+        Servicio.hasMany(models.Producto, {
+            as: 'productos',
+            foreignKey: 'servicio_id',
+            timestamps: false
+        });
+    }
+
     return Servicio;
 }

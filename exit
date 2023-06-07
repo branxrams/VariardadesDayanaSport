@@ -1,0 +1,132 @@
+[33mcommit 704cb51943069ce41b995593bc7adbb7f20380e1[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Merge: f831d5e b6c4579
+Author: branxrams <braraos21@gmail.com>
+Date:   Wed Jun 7 13:59:52 2023 -0500
+
+    Merge branch 'main' of https://github.com/branxrams/VariardadesDayanaSport
+
+[33mcommit f831d5e0c3e6666b58ba01d2ac718b1324600b79[m
+Author: branxrams <braraos21@gmail.com>
+Date:   Wed Jun 7 13:59:40 2023 -0500
+
+    fix: repair database conection
+
+[33mcommit b6c457917a92faeacf380efb74644c222f59ada4[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Jesus Alberto <jesusalbertomoralesrico@gmail.com>
+Date:   Wed Jun 7 13:51:43 2023 -0500
+
+    Update: Update index page layout
+
+[33mcommit 7444508e721eb1caf5f4f2654c73cf5f7e8090ab[m
+Author: Jesus Alberto <jesusalbertomoralesrico@gmail.com>
+Date:   Wed Jun 7 13:51:19 2023 -0500
+
+    Update: Changed header css styles and layout
+
+[33mcommit 405a05be095986f97f6b577a21150893507ca73f[m
+Author: Jesus Alberto <jesusalbertomoralesrico@gmail.com>
+Date:   Wed Jun 7 13:50:48 2023 -0500
+
+    Update: Added register from and index page styles
+
+[33mcommit 4608a33f9b4c8b027ac8d53c28c5730398d0f2c8[m
+Author: Jesus Alberto <jesusalbertomoralesrico@gmail.com>
+Date:   Wed Jun 7 13:49:59 2023 -0500
+
+    Feat: Created register from styles
+
+[33mcommit 354c948790d0ee878dd6848e23cfa91c9f377d89[m
+Author: Jesus Alberto <jesusalbertomoralesrico@gmail.com>
+Date:   Wed Jun 7 13:49:10 2023 -0500
+
+    Feat: Created index page styles
+
+[33mcommit 5571b8fb9e5f485a9c75f08f842af5c328f8520c[m
+Author: Jesus Alberto <jesusalbertomoralesrico@gmail.com>
+Date:   Wed Jun 7 12:31:24 2023 -0500
+
+    Feat: Login navbar button now have shadows
+
+[33mcommit 844f6c32ab8394cec9757bd28bb2595e15b09845[m
+Author: Jesus Alberto <jesusalbertomoralesrico@gmail.com>
+Date:   Wed Jun 7 12:30:34 2023 -0500
+
+    Feat: Created shadow utils styles
+
+[33mcommit 9fe69112bc1c50d494435a17e1a2fe8c21f017ed[m
+Author: Jesus Alberto <jesusalbertomoralesrico@gmail.com>
+Date:   Wed Jun 7 12:18:53 2023 -0500
+
+    Feat: Added import for login navbar styles
+
+[33mcommit 6d88b1ada7de093eb2e0a3e0f4015d4e817b704c[m
+Author: Jesus Alberto <jesusalbertomoralesrico@gmail.com>
+Date:   Wed Jun 7 12:18:00 2023 -0500
+
+    Update: Added cursor pointer on login navbar button
+
+[33mcommit 3f324d5fd7812189128cbb2647ffe03e434a7607[m
+Author: Jesus Alberto <jesusalbertomoralesrico@gmail.com>
+Date:   Wed Jun 7 12:16:54 2023 -0500
+
+    Feat: Created login navbar module and styles
+
+[33mcommit ce9c707fc9a14d30bcd4c5d33a018fbb7cba18cc[m
+Author: Jesus Alberto <jesusalbertomoralesrico@gmail.com>
+Date:   Wed Jun 7 11:49:52 2023 -0500
+
+    Update: App logo its now in a div and uses cetered class
+
+[33mcommit 1abea33d8d94c76453e14e58509beeac423944f4[m
+Author: Jesus Alberto <jesusalbertomoralesrico@gmail.com>
+Date:   Wed Jun 7 11:48:51 2023 -0500
+
+    Feat: Created css styles for app logo
+
+[33mcommit f4e3d31eebf61f7a53920d67784886e7813851ed[m
+Author: Jesus Alberto <jesusalbertomoralesrico@gmail.com>
+Date:   Wed Jun 7 11:45:51 2023 -0500
+
+    Feat: Imported utils css variales
+
+[33mcommit a9adf6d9219ae641e0cd5fcc7f1fb9c072ea90a1[m
+Author: Jesus Alberto <jesusalbertomoralesrico@gmail.com>
+Date:   Wed Jun 7 11:44:58 2023 -0500
+
+    Feat: Created utils css styles
+
+[33mcommit 0e1ed5cf75b3fa3f9ff939acbbba8a7a2bb8f16d[m
+Author: Jesus Alberto <jesusalbertomoralesrico@gmail.com>
+Date:   Wed Jun 7 11:39:59 2023 -0500
+
+    Feat: Added header text color css variable
+
+[33mcommit e151acf134b4a4a3adf36c6a095297f0ea063733[m
+Author: Jesus Alberto <jesusalbertomoralesrico@gmail.com>
+Date:   Wed Jun 7 11:39:24 2023 -0500
+
+    Feat: Added import url for header styles
+
+[33mcommit 08884bd2be2a7a6fb0320d4d15b264cd6b9223f6[m
+Author: Jesus Alberto <jesusalbertomoralesrico@gmail.com>
+Date:   Wed Jun 7 11:38:27 2023 -0500
+
+    Feat: Created header module css styles
+
+[33mcommit 414f21326950b69d27a371162ef36c2eaf28772b[m
+Author: Jesus Alberto <jesusalbertomoralesrico@gmail.com>
+Date:   Wed Jun 7 11:37:57 2023 -0500
+
+    Feat: Created Head and Header partial modules
+
+[33mcommit 0dcfb1d7b8068dd0665d8667eb38e70e32bfa655[m
+Author: Jesus Alberto <jesusalbertomoralesrico@gmail.com>
+Date:   Wed Jun 7 11:37:00 2023 -0500
+
+    Initial commit modules
+
+[33mcommit f17a1bec60d05ea17c01338f8201d50798af4ac5[m
+Author: branxrams <braraos21@gmail.com>
+Date:   Tue Jun 6 21:17:51 2023 -0500
+
+    [ADD] Inital proyect

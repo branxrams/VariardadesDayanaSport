@@ -27,5 +27,13 @@ module.exports = (sequelize, dataTypes) => {
 
     const Empleado = sequelize.define(alias, cols, config);
 
+    Empleado.association = models => {
+        Empleado.hasMany(models.Pedido, {
+            as: 'pedido',
+            foreignKey: 'empleado_id',
+            timestamps: false
+        });
+    }
+
     return Empleado;
 }

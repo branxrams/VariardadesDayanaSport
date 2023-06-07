@@ -18,7 +18,15 @@ module.exports = (sequelize, dataTypes) => {
         tableName: 'colegio'
     }
 
-    const Colegio = sequelize.define(alias, cols, config); 
+    const Colegio = sequelize.define(alias, cols, config);
+
+    Colegio.association = models => {
+        Colegio.hasMany(models.Producto, {
+            as: 'productos',
+            foreignKey: 'product_id',
+            timestamps: false
+        });
+    }
 
     return Colegio
 }

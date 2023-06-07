@@ -25,6 +25,13 @@ module.exports = (sequelize, dataTypes) => {
 
     const Abono = sequelize.define(alias, cols, config);
 
+    Abono.association = models => {
+        Abono.hasMany(models.Pedido, {
+            as: 'pedidos',
+            foreignKey: 'pedido_id',
+            timestamps: false
+        });
+    }
 
     return Abono;
 }

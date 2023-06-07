@@ -33,5 +33,25 @@ module.exports = (sequelize, dataTypes) => {
 
     const Producto = sequelize.define(alias, cols, config);
 
+    Producto.association = models => {
+        Producto.BelongsTo(models.Colegio, {
+            as: 'colegios',
+            foreginKey: 'colegio_id',
+            timestamps: false
+        });
+
+        Producto.BelongsTo(models.Colegio, {
+            as: 'Servicios',
+            foreginKey: 'servicio_id',
+            timestamps: false
+        });
+
+        Producto.hasMany(models.Detalle, {
+            as: 'detalles',
+            foreginKey: 'producto_id',
+            timestamps: false
+        })
+
+    }
     return Producto;
 }
