@@ -1,0 +1,43 @@
+#registerFormContainer {
+  width: 90%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.registerFormBox {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.registerFormBox label {
+  color: white;
+
+  font-size: 16px;
+  font-weight: bold;
+
+  line-height: 22px;
+}
+
+.registerFormBox input,
+.registerFormBox select {
+  height: 37px;
+
+  border: none;
+  border-radius: 10px;
+}
+
+#registerFormInputText {
+  color: black;
+
+  padding-left: 10px;
+
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.registerFormBox input::placeholder {
+  color: #d9d9d9;
+}
