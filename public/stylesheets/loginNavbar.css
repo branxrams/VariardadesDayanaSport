@@ -1,0 +1,45 @@
+#LoginNavbar {
+  gap: 15px;
+  justify-content: space-between;
+}
+
+#LoginNavbarButton {
+  width: 150px;
+  height: 42px;
+
+  border: none;
+  border-radius: 20px;
+}
+
+#LoginNavbarbarButtonText {
+  text-decoration: none;
+  text-align: center;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.SignInButton {
+  background-color: #5fc3e1;
+}
+
+.SignInButton a {
+  color: #fff;
+}
+
+.SignInButton:hover {
+  background-color: #4893a9;
+}
+
+.RegisterButton {
+  background-color: #fff;
+}
+
+.RegisterButton a {
+  color: #5fc3e1;
+}
+
+.RegisterButton:hover {
+  background-color: #e0e0e0;
+}
