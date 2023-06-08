@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <%- include("./partials/Head") %>
+  <body>
+    <div id="indexPageContainer" class="centered">
+      <div class="logoSection centered">
+        <%- include("./partials/AppLogo") %>
+      </div>
+
+      <div class="headerTitleSection centered">
+        <%- include("./partials/Header", {title: 'BIENVENIDO'}) %>
+      </div>
+
+      <div class="navigationButtonsAndRegisterFormSection">
+        <%- include("./partials/LoginNavbar") %> LOGIN
+      </div>
+    </div>
+  </body>
+</html>
