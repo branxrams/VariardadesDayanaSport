@@ -61,6 +61,20 @@ const apiMainController = {
                 })
             })
             .catch(error => res.json(error))
+    },
+    productos: (req, res) => {
+        Productos.findAll()
+            .then( listaProductos => {
+                res.status(200).json({
+                    meta: {
+                        status: 200,
+                        total: listaProductos.length,
+                        url: 'api/productos'
+                    },
+                    data: listaProductos
+                })
+            })
+            .catch(error => res.json(error))
     }
 }
 
