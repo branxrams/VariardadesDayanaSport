@@ -29,3 +29,7 @@
   padding: 30px 10px 10px 10px;
   border-radius: 20px 20px 0px 0px;
 }
+
+.registerUserButton:hover {
+  background-color: #b6b6b6;
+}
