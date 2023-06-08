@@ -2,7 +2,7 @@ const db = require('../models');
 
 const mainController = {
     index: (req, res) => {
-        res.render('index', {title: 'Express'});
+        res.render('index');
     }
 }
 

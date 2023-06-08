@@ -7,7 +7,7 @@ module.exports = (sequelize, dataTypes) => {
             primaryKey: true,
             autoIncrement: true
         },
-        fechaModificacion:{
+        fechaCreacion:{
             type: dataTypes.STRING,
             allowNull: true
         },
@@ -23,8 +23,7 @@ module.exports = (sequelize, dataTypes) => {
     }
 
     let config = {
-        timestamps: true,
-        created_at: 'fechaCreacion',
+        timestamps: false,
         tableName: 'pedido'
     }
 
