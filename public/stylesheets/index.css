@@ -14,15 +14,16 @@
   flex-grow: 1;
 }
 
-.navigationButtonsAndRegisterFormSection {
+.interactionSection {
   background-color: #5fc3e1;
+  height: 500px;
   max-height: 500px;
 
   display: flex;
   flex-direction: column;
   flex-grow: 2;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 30px;
 
   margin: 0px 10px 0px 10px;
