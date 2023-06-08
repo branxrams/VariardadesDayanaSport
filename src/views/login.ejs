@@ -11,8 +11,44 @@
         <%- include("./partials/Header", {title: 'BIENVENIDO'}) %>
       </div>
 
-      <div class="navigationButtonsAndRegisterFormSection">
-        <%- include("./partials/LoginNavbar") %> LOGIN
+      <div class="interactionSection">
+        <%- include("./partials/LoginNavbar") %>
+
+        <form id="registerFormContainer">
+          <div class="registerFormBox">
+            <label for="celular">Celular</label>
+            <input
+              type="tel"
+              id="userPhone"
+              class="registerFormInputText shadows"
+              name="celular"
+              pattern="[0-9]+"
+              placeholder="Ingrese su número de celular"
+              required
+            />
+          </div>
+
+          <div class="registerFormBox">
+            <label for="contrasena">Contraseña</label>
+            <input
+              type="password"
+              id="userPassword"
+              class="registerFormInputText shadows"
+              name="password"
+              placeholder="Ingrese su contraseña"
+              required
+            />
+          </div>
+
+          <div class="centered">
+            <button
+              class="standardButton registerUserButton shadows"
+              type="submit"
+            >
+              <a class="standardButtonText"> Iniciar Sesión</a>
+            </button>
+          </div>
+        </form>
       </div>
     </div>
   </body>
