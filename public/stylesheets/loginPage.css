@@ -1,11 +1,11 @@
-#indexPageContainer {
+#loginPageContainer {
   height: 100vh;
 
   display: grid;
   grid-template-rows: 120fr 100fr 1fr;
 }
 
-.interactionSection {
+.loginPageInteractionSection {
   background-color: #5fc3e1;
   height: 500px;
   max-height: 500px;
