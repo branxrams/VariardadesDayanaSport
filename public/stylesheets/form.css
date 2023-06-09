@@ -13,7 +13,7 @@
 }
 
 .formBox label {
-  color: white;
+  color: var(--FORMBOX-LABEL-TEXT-COLOR);
 
   font-size: 16px;
   font-weight: bold;
@@ -30,7 +30,7 @@
 }
 
 .formInputText {
-  color: black;
+  color: var(--FORMBOX-INPUT-TEXT-COLOR);
 
   padding-left: 10px;
 
@@ -39,5 +39,5 @@
 }
 
 .formBox input::placeholder {
-  color: #d9d9d9;
+  color: var(--FORMBOX-INPUT-PLACEHOLDER-TEXT-COLOR);
 }

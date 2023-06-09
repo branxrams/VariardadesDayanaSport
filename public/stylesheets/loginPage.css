@@ -6,7 +6,8 @@
 }
 
 .loginPageInteractionSection {
-  background-color: #5fc3e1;
+  background-color: var(--INTERACTION-SECTION-BACKGROUND-COLOR);
+
   height: 500px;
   max-height: 500px;
 

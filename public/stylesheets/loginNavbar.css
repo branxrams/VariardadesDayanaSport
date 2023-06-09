@@ -4,25 +4,25 @@
 }
 
 .SignInButton {
-  background-color: #5fc3e1;
+  background-color: var(--SIGN-IN-BUTTON-BACKGROUND-COLOR);
 }
 
 .SignInButton a {
-  color: #fff;
+  color: var(--SIGN-IN-BUTTON-TEXT-COLOR);
 }
 
 .SignInButton:hover {
-  background-color: #4893a9;
+  background-color: var(--SIGN-IN-BUTTON-HOVER-COLOR);
 }
 
 .RegisterButton {
-  background-color: #fff;
+  background-color: var(--REGISTER-BUTTON-BACKGROUND-COLOR);
 }
 
 .RegisterButton a {
-  color: #5fc3e1;
+  color: var(--REGISTER-BUTTON-TEXT-COLOR);
 }
 
 .RegisterButton:hover {
-  background-color: #e0e0e0;
+  background-color: var(--REGISTER-BUTTON-HOVER-COLOR);
 }

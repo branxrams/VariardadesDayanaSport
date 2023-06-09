@@ -11,6 +11,8 @@
 .standardButton {
   cursor: pointer;
 
+  background-color: var(--STANDARD-BUTTON-BACKGROUND-COLOR);
+
   width: 150px;
   height: 42px;
 
@@ -22,11 +24,13 @@
   text-decoration: none;
   text-align: center;
 
+  color: var(--STANDARD-BUTTON-TEXT-COLOR);
+
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
 }
 
 .standardButton:hover {
-  background-color: #b6b6b6;
+  background-color: var(--STANDARD-BUTTON-HOVER-COLOR);
 }
