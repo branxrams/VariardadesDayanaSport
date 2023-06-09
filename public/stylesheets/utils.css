@@ -26,3 +26,7 @@
   font-size: 16px;
   line-height: 22px;
 }
+
+.standardButton:hover {
+  background-color: #b6b6b6;
+}
