@@ -7,6 +7,9 @@ const mainController = {
   login: (req, res) => {
     res.render("login", { title: "Iniciar Sesión" });
   },
+  opcPrincipales: (req, res) => {
+    res.render("opcPrincipales", { title: "Opciones Principales" });
+  },
 };
 
 module.exports = mainController;
