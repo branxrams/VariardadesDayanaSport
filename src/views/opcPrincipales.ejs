@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
   <%- include("./partials/Head") %>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
   <body>
     <div id="opcPrincipalesContainer" class="centered">
       <div class="logoSection centered">
@@ -8,12 +12,30 @@
       </div>
 
       <div class="opcPrincipalesSection centered">
-        <div class="opcPrincipalesItem">Precios</div>
-        <div class="opcPrincipalesItem">Pedidos</div>
-        <div class="opcPrincipalesItem">Bordados</div>
-        <div class="opcPrincipalesItem">Alquiler</div>
-        <div class="opcPrincipalesItem">Reportes</div>
-        <div class="opcPrincipalesItem">Buscador</div>
+        <div class="opcPrincipalesItem centered shadows">
+          <i class="fas fa-dollar-sign"></i>
+          <p class="opcPrincipalesItemText">Precios</p>
+        </div>
+        <div class="opcPrincipalesItem centered shadows">
+          <i class="fas fa-shopping-cart"></i>
+          <p class="opcPrincipalesItemText">Pedidos</p>
+        </div>
+        <div class="opcPrincipalesItem centered shadows">
+          <i class="fas fa-paint-brush"></i>
+          <p class="opcPrincipalesItemText">Bordados</p>
+        </div>
+        <div class="opcPrincipalesItem centered shadows">
+          <i class="fas fa-store"></i>
+          <p class="opcPrincipalesItemText">Alquiler</p>
+        </div>
+        <div class="opcPrincipalesItem centered shadows">
+          <i class="fas fa-chart-line"></i>
+          <p class="opcPrincipalesItemText">Reportes</p>
+        </div>
+        <div class="opcPrincipalesItem centered shadows">
+          <i class="fas fa-search"></i>
+          <p class="opcPrincipalesItemText">Buscador</p>
+        </div>
       </div>
     </div>
   </body>
