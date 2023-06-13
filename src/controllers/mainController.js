@@ -83,6 +83,9 @@ const mainController = {
       })
       .catch(error => console.log(error));
     }
+  },
+  opcPrincipales: (req, res) => {
+    res.render("opcPrincipales", { title: "Opciones Principales" });
   }
 };
 

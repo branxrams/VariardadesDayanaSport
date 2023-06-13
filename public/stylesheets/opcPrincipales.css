@@ -1,0 +1,67 @@
+#opcPrincipalesContainer {
+  height: 100vh;
+
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.opcPrincipalesSection {
+  height: 100%;
+  width: auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.opcPrincipalesItem {
+  cursor: pointer;
+
+  background-color: #5fc3e1;
+
+  height: 190px;
+  width: 190px;
+
+  border-radius: 10px;
+
+  flex-direction: column;
+  gap: 15px;
+}
+
+.opcPrincipalesItem:hover {
+  background-color: #4893a9;
+}
+
+.opcPrincipalesItemText,
+.opcPrincipalesItem i {
+  color: #fff;
+}
+
+.opcPrincipalesItem i {
+  font-size: 26px;
+}
+
+.opcPrincipalesItemText {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  #opcPrincipalesContainer {
+    justify-content: center;
+  }
+
+  .opcPrincipalesSection {
+    height: auto;
+
+    gap: 5px;
+  }
+
+  .opcPrincipalesItem {
+    height: 160px;
+    width: 160px;
+  }
+}

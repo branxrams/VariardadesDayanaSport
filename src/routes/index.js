@@ -10,5 +10,6 @@ router.get("/signin", mainController.signinPage);
 router.post("/signin", validations.validationsSignin, mainController.signin);
 router.get("/login", mainController.loginPage);
 router.post("/login", validations.validationsLogin, mainController.login);
+router.get("/opcprincipales", mainController.opcPrincipales);
 
 module.exports = router;
