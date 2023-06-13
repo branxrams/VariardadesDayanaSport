@@ -1,73 +1,8 @@
 <!DOCTYPE html>
-<html>
-  <%- include("./partials/Head", {title: 'Iniciar sesion'}) %>
-  <body>
-    <div id="indexPageContainer" class="centered">
-      <div class="logoSection centered">
-        <%- include("./partials/AppLogo") %>
-      </div>
-
-      <div class="headerTitleSection centered">
-        <%- include("./partials/Header", {title: 'BIENVENIDO'}) %>
-      </div>
-
-      <div class="interactionSection">
-        <%- include("./partials/LoginNavbar") %>
-
-        <form id="formContainer">
-          <div class="formBox">
-            <label for="nombre">Nombre</label>
-            <input
-              type="text"
-              id="userName"
-              class="formInputText shadows"
-              name="nombre"
-              placeholder="Ingrese su nombre completo"
-              required
-            />
-          </div>
-
-          <div class="formBox">
-            <label for="cargo">Cargo</label>
-            <select id="cargo" name="cargo" required>
-              <option disabled selected>Seleccione el cargo</option>
-              <option value="empleado">Empleado</option>
-              <option value="administrador">Administrador</option>
-            </select>
-          </div>
-
-          <div class="formBox">
-            <label for="celular">Celular</label>
-            <input
-              type="tel"
-              id="userPhone"
-              class="formInputText shadows"
-              name="celular"
-              pattern="[0-9]+"
-              placeholder="Ingrese su número de celular"
-              required
-            />
-          </div>
-
-          <div class="formBox">
-            <label for="contrasena">Contraseña</label>
-            <input
-              type="password"
-              id="userPassword"
-              class="formInputText shadows"
-              name="password"
-              placeholder="Ingrese su contraseña"
-              required
-            />
-          </div>
-
-          <div class="centered">
-            <button class="standardButton shadows" type="submit">
-              <a class="standardButtonText"> Registrarme</a>
-            </button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </body>
+<html lang="en">
+    <%- include("./partials/Head") %>
+<body>
+   <a href="/login">Inicio Sesion</a>
+   <a href="/signin">Registro</a>
+</body>
 </html>

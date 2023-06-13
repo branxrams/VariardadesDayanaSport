@@ -14,7 +14,7 @@
       <div class="loginPageInteractionSection">
         <%- include("./partials/LoginNavbar") %>
 
-        <form id="formContainer">
+        <form id="formContainer" action="/login" method="post">
           <div class="formBox">
             <label for="celular">Celular</label>
             <input
@@ -26,6 +26,9 @@
               placeholder="Ingrese su número de celular"
               required
             />
+            <% if (locals.errors && errors.badUser) { %>
+              <li><span><%= errors.badUser.msg %></span></li>
+            <% } %>
           </div>
 
           <div class="formBox">
@@ -38,7 +41,12 @@
               placeholder="Ingrese su contraseña"
               required
             />
+            <% if (locals.errors && errors.badPass) { %>
+              <li><span><%= errors.badPass.msg %></span></li>
+            <% } %>
           </div>
+
+          
 
           <div class="centered">
             <button class="standardButton shadows" type="submit">

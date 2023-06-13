@@ -1,7 +1,7 @@
 {
   "name": "dayanasport",
   "version": "1.0.0",
-  "author": "Bryan ramos - Leiner Soraca",
+  "author": "Bryan ramos - Jesus Morales - Maria Herrera",
   "description": "N/N",
   "private": true,
   "main": "./bin/www",
@@ -10,6 +10,7 @@
     "build": "electron-builder"
   },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "ejs": "^3.1.9",
@@ -23,7 +24,7 @@
   },
   "devDependencies": {
     "electron": "^23.3.5",
-    "electron-builder": "^23.6.0",
+    "electron-builder": "^24.4.0",
     "nodemon": "^2.0.22"
   },
   "build": {
