@@ -22,18 +22,19 @@ const mainController = {
     }else{
       hash.generateHashAsync(req.body.password)
         .then(hash => {
-          console.log(hash);
           let data = {
             nombre: req.body.nombre,
             usuario: req.body.celular,
             contrasena: hash,
             rol: req.body.cargo,
           };
-          Empleados.create(data);
+          Empleados.create(data)
+            .then(status => {
+              res.render('login', {title: 'Iniciar Sesión', status: status});
+            })
+            .catch(error => console.log(error));
         })
         .catch(error => console.log(error))
-      
-      res.render('login', {title: 'Iniciar Sesión'})
     }
   },
   login: (req, res) => {

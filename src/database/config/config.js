@@ -4,7 +4,9 @@ module.exports = {
     "password": "857Osqsuw2uPGX9SqIbT",
     "database": "railway",
     "host": "containers-us-west-2.railway.app",
+    "port": 5634,
     "dialect": "mysql"
+    
   },
   "test": {
     "username": "root",
