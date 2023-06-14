@@ -1,9 +1,9 @@
 module.exports = {
   "development": {
     "username": "root",
-    "password": null,
-    "database": "dayana_sport_db",
-    "host": "127.0.0.1",
+    "password": "857Osqsuw2uPGX9SqIbT",
+    "database": "railway",
+    "host": "containers-us-west-2.railway.app",
     "dialect": "mysql"
   },
   "test": {
