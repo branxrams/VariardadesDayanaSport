@@ -27,7 +27,7 @@
               required
             />
             <% if (locals.errors && errors.nombre) { %>
-             <span><li><%= errors.nombre.msg %></li></span>
+            <%- include("./partials/ErrorBox", {error: errors.nombre.msg}) %>
             <% } %>
           </div>
 
@@ -53,7 +53,7 @@
               required
             />
             <% if (locals.errors && errors.celular) { %>
-              <span><li><%= errors.celular.msg %></li></span>
+            <%- include("./partials/ErrorBox", {error: errors.celular.msg}) %>
              <% } %>
           </div>
 
@@ -68,7 +68,7 @@
               required
             />
             <% if (locals.errors && errors.password) { %>
-              <li><span><%= errors.password.msg %></span></li>
+            <%- include("./partials/ErrorBox", {error: errors.password.msg}) %>
              <% } %>
           </div>
 

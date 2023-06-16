@@ -26,8 +26,8 @@
               placeholder="Ingrese su número de celular"
               required
             />
-            <% if (locals.errors && errors.badUser) { %>
-              <li><span><%= errors.badUser.msg %></span></li>
+            <% if (locals.errors && errors.badUser) { %>            
+            <%- include("./partials/ErrorBox", {error: errors.badUser.msg}) %>
             <% } %>
           </div>
 
@@ -41,12 +41,10 @@
               placeholder="Ingrese su contraseña"
               required
             />
-            <% if (locals.errors && errors.badPass) { %>
-              <li><span><%= errors.badPass.msg %></span></li>
+            <% if (locals.errors && errors.badPass) { %>            
+            <%- include("./partials/ErrorBox", {error: errors.badPass.msg}) %>
             <% } %>
           </div>
-
-          
 
           <div class="centered">
             <button class="standardButton shadows" type="submit">
@@ -54,8 +52,8 @@
             </button>
           </div>
 
-          <% if (locals.errors && errors.badLogin) { %>
-              <li><span><%= errors.badLogin.msg %></span></li>
+          <% if (locals.errors && errors.badLogin) { %>          
+          <%- include("./partials/ErrorBox", {error: errors.badLogin.msg}) %> 
           <% } %>
         </form>
       </div>
