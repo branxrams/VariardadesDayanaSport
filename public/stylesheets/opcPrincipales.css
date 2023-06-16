@@ -3,7 +3,25 @@
 
   flex-direction: column;
   justify-content: flex-start;
-  gap: 30px;
+  gap: 20px;
+}
+
+.userSection {
+  background-color: #5fc3e1;
+
+  justify-content: space-around;
+
+  width: 420px;
+  height: 90px;
+
+  border: none;
+  border-radius: 10px;
+}
+
+.userNameSection {
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 .opcPrincipalesSection {
@@ -52,6 +70,17 @@
 @media screen and (max-width: 768px) {
   #opcPrincipalesContainer {
     justify-content: center;
+  }
+
+  .userSection {
+    height: 100px;
+    width: 80%;
+
+    flex-direction: column;
+  }
+
+  .userNameSection {
+    font-size: 20px;
   }
 
   .opcPrincipalesSection {
