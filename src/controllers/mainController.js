@@ -4,6 +4,7 @@ const { Op } = require("sequelize");
 const hash = require('../helpers/hash');
 const Empleados = db.Empleado;
 
+
 const mainController = {
   index: (req, res) => {
     res.render('index', {title: 'Inicio'});
@@ -75,7 +76,8 @@ const mainController = {
                 });
               }
               req.session.loggedUSer = data.usuario;
-              res.render('opcPrincipales', { title: "Opciones Principales" });
+              req.session.name = data.nombre;
+              res.render('opcPrincipales', { title: "Opciones Principales", name: req.session.name});
             })
             .catch(error => {
               console.log(error);
@@ -87,7 +89,28 @@ const mainController = {
     }
   },
   opcPrincipales: (req, res) => {
-    res.render("opcPrincipales", { title: "Opciones Principales" });
+    if (req.session.loggedUSer != undefined) {
+      res.render("opcPrincipales", { title: "Opciones Principales", name: req.session.name});
+    }else {
+      setTimeout(() => {
+        res.render('login', {
+            title: 'Iniciar Sesion',
+            errors: {
+                badLogin: {
+                    msg: 'Debes Iniciar sesion primero'
+                }
+            }
+        });
+    }, 5000);
+    }
+  },
+  logout: (req, res) => {
+    delete req.session.loggedUSer;
+    console.log(req.session.loggedUSer);
+
+    setTimeout(() => {
+      res.redirect('/login');
+    }, 2000)
   }
 };
 

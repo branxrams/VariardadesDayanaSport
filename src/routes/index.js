@@ -12,5 +12,6 @@ router.post("/signin", validations.validationsSignin, mainController.signin);
 router.get("/login", mainController.loginPage);
 router.post("/login", validations.validationsLogin, mainController.login);
 router.get("/opcprincipales", authMiddleware, mainController.opcPrincipales);
+router.post("/logout", mainController.logout);
 
 module.exports = router;
