@@ -74,7 +74,8 @@ const mainController = {
                   }
                 });
               }
-              res.send(data);
+              req.session.loggedUSer = data.usuario;
+              res.render('opcPrincipales', { title: "Opciones Principales" });
             })
             .catch(error => {
               console.log(error);

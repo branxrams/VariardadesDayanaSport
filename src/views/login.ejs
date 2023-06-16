@@ -53,6 +53,10 @@
               <a class="standardButtonText"> Iniciar Sesión</a>
             </button>
           </div>
+
+          <% if (locals.errors && errors.badLogin) { %>
+              <li><span><%= errors.badLogin.msg %></span></li>
+          <% } %>
         </form>
       </div>
     </div>

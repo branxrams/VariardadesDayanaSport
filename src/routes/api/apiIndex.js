@@ -1,6 +1,6 @@
-var express = require('express');
+const express = require('express');
 const apiMainController = require('../../controllers/api/apiMainController');
-var router = express.Router();
+const router = express.Router();
 
 
 router.get('/api/colegios', apiMainController.colegios);
