@@ -12,7 +12,7 @@ const mainController = {
     res.render("signin");
   },
   loginPage: (req, res) => {
-    res.render("login", { title: "Iniciar Sesión" });
+    res.render("login");
   },
   signin: (req, res) => {
     let errors = validationResult(req);
