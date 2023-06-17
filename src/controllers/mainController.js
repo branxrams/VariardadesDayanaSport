@@ -3,6 +3,7 @@ const db = require("../models");
 const { Op } = require("sequelize");
 const hash = require("../helpers/hash");
 const Empleados = db.Empleado;
+const ERROR_MESSAGES = require("../helpers/errorMessages");
 
 const mainController = {
   index: (req, res) => {
@@ -61,7 +62,7 @@ const mainController = {
             return res.render("login", {
               errors: {
                 badUser: {
-                  msg: "Usuario no econtrado",
+                  msg: ERROR_MESSAGES.NOT_FOUND_USER,
                 },
               },
             });
@@ -75,7 +76,7 @@ const mainController = {
                   return res.render("login", {
                     errors: {
                       badPass: {
-                        msg: "Contraseña Invalida",
+                        msg: ERROR_MESSAGES.BAD_PASSWORD,
                       },
                     },
                   });
@@ -104,7 +105,7 @@ const mainController = {
         res.render("login", {
           errors: {
             badLogin: {
-              msg: "Debes Iniciar sesion primero",
+              msg: ERROR_MESSAGES.BAD_LOGIN,
             },
           },
         });
