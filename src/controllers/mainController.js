@@ -4,7 +4,6 @@ const { Op } = require("sequelize");
 const hash = require("../helpers/hash");
 const Empleados = db.Empleado;
 
-
 const mainController = {
   index: (req, res) => {
     res.render("index");
@@ -20,7 +19,6 @@ const mainController = {
 
     if (!errors.isEmpty()) {
       res.render("signin", {
-        title: "Registro",
         errors: errors.mapped(),
         oldData: req.body,
       });
@@ -36,7 +34,7 @@ const mainController = {
           };
           Empleados.create(data)
             .then((status) => {
-              res.render("login", { title: "Iniciar Sesión", status: status });
+              res.render("login", { status: status });
             })
             .catch((error) => console.log(error));
         })
@@ -48,7 +46,6 @@ const mainController = {
 
     if (!errors.isEmpty()) {
       res.render("login", {
-        title: "Iniciar Sesión",
         errors: errors.mapped(),
         oldData: req.body.celular,
       });
@@ -59,58 +56,59 @@ const mainController = {
           usuario: { [Op.like]: celular },
         },
       })
-      .then( user => {
-        if (user.length === 0) {
-          return res.render('login', {
-            title: 'Iniciar Sesión',
-            errors: {
-              badUser:{
-                msg: 'Usuario no econtrado'
-              }
-            }
-          });
-        }else{
-          const data = user[0];
-          hash.comparePasswordAsync(password, data.contrasena)
-            .then(match => {
-              console.log(data.contrasena);
-              if(!match){
-              return res.render('login', {
-                  title: 'Iniciar Sesión',
-                  errors: {
-                    badPass:{
-                      msg: 'Contraseña Invalida'
-                    }
-                  }
+        .then((user) => {
+          if (user.length === 0) {
+            return res.render("login", {
+              errors: {
+                badUser: {
+                  msg: "Usuario no econtrado",
+                },
+              },
+            });
+          } else {
+            const data = user[0];
+            hash
+              .comparePasswordAsync(password, data.contrasena)
+              .then((match) => {
+                console.log(data.contrasena);
+                if (!match) {
+                  return res.render("login", {
+                    errors: {
+                      badPass: {
+                        msg: "Contraseña Invalida",
+                      },
+                    },
+                  });
+                }
+                req.session.loggedUSer = data.usuario;
+                req.session.name = data.nombre;
+                res.render("opcPrincipales", {
+                  name: req.session.name,
                 });
-              }
-              req.session.loggedUSer = data.usuario;
-              req.session.name = data.nombre;
-              res.render('opcPrincipales', { title: "Opciones Principales", name: req.session.name});
-            })
-            .catch(error => {
-              console.log(error);
-            })
-        }
-        
-      })
-      .catch(error => console.log(error));
+              })
+              .catch((error) => {
+                console.log(error);
+              });
+          }
+        })
+        .catch((error) => console.log(error));
     }
   },
   opcPrincipales: (req, res) => {
     if (req.session.loggedUSer != undefined) {
-      res.render("opcPrincipales", { title: "Opciones Principales", name: req.session.name});
-    }else {
+      res.render("opcPrincipales", {
+        name: req.session.name,
+      });
+    } else {
       setTimeout(() => {
-        res.render('login', {
-            title: 'Iniciar Sesion',
-            errors: {
-                badLogin: {
-                    msg: 'Debes Iniciar sesion primero'
-                }
-            }
+        res.render("login", {
+          errors: {
+            badLogin: {
+              msg: "Debes Iniciar sesion primero",
+            },
+          },
         });
-    }, 5000);
+      }, 5000);
     }
   },
   logout: (req, res) => {
@@ -118,9 +116,9 @@ const mainController = {
     console.log(req.session.loggedUSer);
 
     setTimeout(() => {
-      res.redirect('/login');
-    }, 2000)
-  }
+      res.redirect("/login");
+    }, 2000);
+  },
 };
 
 module.exports = mainController;
