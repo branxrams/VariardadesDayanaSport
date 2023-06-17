@@ -85,7 +85,7 @@ const mainController = {
                   });
                 }
                 req.session.loggedUSer = data.usuario;
-                res.render("opcPrincipales", { title: "Opciones Principales" });
+                res.render("opcPrincipales");
               })
               .catch((error) => {
                 console.log(error);
@@ -96,7 +96,7 @@ const mainController = {
     }
   },
   opcPrincipales: (req, res) => {
-    res.render("opcPrincipales", { title: "Opciones Principales" });
+    res.render("opcPrincipales");
   },
 };
 
