@@ -12,11 +12,13 @@
       </div>
 
       <div class="userSection centered shadows">
-        <p class="userNameSection">Bienvenido %USUARIO%</p>
+        <p class="userNameSection">Bienvenido <%= name %></p>
         <div class="centered">
-          <button class="standardButton shadows">
-            <a class="standardButtonText"> Cerrar sesión</a>
-          </button>
+          <form action="/logout" method="post">
+            <button class="standardButton shadows">
+              <a class="standardButtonText"> Cerrar sesión</a>
+            </button>
+          </form>
         </div>
       </div>
 
