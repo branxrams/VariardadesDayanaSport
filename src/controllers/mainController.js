@@ -7,7 +7,7 @@ const Empleados = db.Empleado;
 
 const mainController = {
   index: (req, res) => {
-    res.render("index", { title: "Inicio" });
+    res.render("index");
   },
   signinPage: (req, res) => {
     res.render("signin");
