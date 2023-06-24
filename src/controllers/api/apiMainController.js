@@ -17,6 +17,7 @@ const apiMainController = {
                    },
                    data: listaColegios
                 });
+                
             })
             .catch(error => res.json(error))
     },

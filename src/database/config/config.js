@@ -1,10 +1,14 @@
+const dotenv = require('dotenv');
+const dBCredential = process.env;
+dotenv.config();
+
 module.exports = {
   "development": {
-    "username": "root",
-    "password": "857Osqsuw2uPGX9SqIbT",
-    "database": "railway",
-    "host": "containers-us-west-2.railway.app",
-    "port": 5634,
+    "username": dBCredential.DB_USER,
+    "password": dBCredential.DB_PASS,
+    "database": dBCredential.DB_DATABASE,
+    "host": dBCredential.DB_HOST,
+    "port": dBCredential.DB_PORT,
     "dialect": "mysql"
     
   },
