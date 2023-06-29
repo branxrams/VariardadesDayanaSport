@@ -1,11 +1,11 @@
 #opcPrincipalesContainer {
   height: 100vh;
-  padding-top: 80px;
+  padding-top: 40px;
 
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  gap: 80px;
+  gap: 40px;
 }
 
 .userSection {
