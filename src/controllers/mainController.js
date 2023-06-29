@@ -15,6 +15,9 @@ const mainController = {
   loginPage: (req, res) => {
     res.render("login");
   },
+  ingresarPedido: (req, res) => {
+    res.render("ingresarPedido");
+  },
   signin: (req, res) => {
     let errors = validationResult(req);
 
