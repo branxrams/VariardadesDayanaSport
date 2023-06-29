@@ -11,15 +11,8 @@
         <%- include("./partials/AppLogo") %>
       </div>
 
-      <div class="userSection centered shadows">
-        <p class="userNameSection">Bienvenido <%= name %></p>
-        <div class="centered">
-          <form action="/logout" method="post">
-            <button class="standardButton shadows">
-              <a class="standardButtonText"> Cerrar sesión</a>
-            </button>
-          </form>
-        </div>
+      <div class="headerTitleSection centered">
+        <%- include("./partials/Header", {title: 'Seleccione el servicio'}) %>
       </div>
 
       <div class="opcPrincipalesSection centered">
@@ -46,6 +39,17 @@
         <div class="opcPrincipalesItem centered shadows">
           <i class="fas fa-search"></i>
           <p class="opcPrincipalesItemText">Buscador</p>
+        </div>
+      </div>
+
+      <div class="userSection centered shadows">
+        <p class="userNameSection">Bienvenido <%= name %></p>
+        <div class="centered">
+          <form action="/logout" method="post">
+            <button class="standardButton shadows">
+              <a class="standardButtonText"> Cerrar sesión</a>
+            </button>
+          </form>
         </div>
       </div>
     </div>
