@@ -22,4 +22,57 @@
   margin: 0px 10px 0px 10px;
   padding: 30px 10px 10px 10px;
   border-radius: 20px 20px 0px 0px;
+
+  overflow-y: auto;
+}
+
+.pedidoToggle {
+  flex-direction: row;
+  align-items: center;
+}
+
+.toggle {
+  display: none;
+}
+
+.toggleButton {
+  cursor: pointer;
+  position: relative;
+
+  height: 27px;
+  width: 60px;
+
+  background-color: #4be814;
+
+  border: solid 1px #39a711;
+  border-radius: 50px;
+
+  transition: 0.2s;
+}
+
+.toggleButton::before {
+  height: 15px;
+  width: 15px;
+  margin: 5px;
+
+  position: absolute;
+  content: "";
+
+  background-color: #fff;
+
+  border-radius: 50%;
+
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+
+  transition: all 0.2s;
+}
+
+.toggle:checked + .toggleButton {
+  background-color: #e35447;
+
+  border: solid 1px #801d14;
+}
+
+.toggle:checked + .toggleButton::before {
+  transform: translateX(33px);
 }

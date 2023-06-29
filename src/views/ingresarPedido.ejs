@@ -1,1 +1,101 @@
-<h1>LOL</h1>
+<!DOCTYPE html>
+<html>
+  <%- include("./partials/Head", {title: 'Ingresar Pedido'}) %>
+  <body>
+    <div id="indexPageContainer" class="centered">
+      <div class="logoSection centered">
+        <%- include("./partials/AppLogo") %>
+      </div>
+
+      <div class="headerTitleSection centered">
+        <%- include("./partials/Header", {title: 'Datos del cliente'}) %>
+      </div>
+
+      <div class="pedidosInteractionSection">
+        <form id="formContainer">
+          <div class="formBox">
+            <label for="nombre">Nombre</label>
+            <input
+              type="text"
+              id="userNamePedido"
+              class="formInputText shadows"
+              name="nombre"
+              placeholder="Ingrese su nombre completo"
+              required
+            />
+          </div>
+
+          <div class="formBox">
+            <label for="userPhonePedido">Número de telefono</label>
+            <input
+              type="number"
+              id="userPhonePedido"
+              class="formInputText shadows"
+              name="userPhonePedido"
+              placeholder="Ingrese su número de telefono"
+              required
+            />
+          </div>
+
+          <div class="formBox">
+            <label for="userIdentificacionPedido"
+              >Documento de identificación</label
+            >
+            <input
+              type="text"
+              id="userIdentificacionPedido"
+              class="formInputText shadows"
+              name="userIdentificacionPedido"
+              placeholder="Ingrese su documento de identificación"
+              required
+            />
+          </div>
+
+          <div class="formBox">
+            <label for="datePedido">Fecha de ingreso</label>
+            <input
+              type="date"
+              id="datePedido"
+              class="formInputText shadows"
+              name="datePedido"
+              min="YYYY-MM-DD"
+              required
+            />
+          </div>
+
+          <div class="formBox pedidoToggle">
+            <label>Entregable en local: </label>
+            <label>Sí </label>
+            <input
+              type="checkbox"
+              id="checkBoxPedido"
+              class="toggle shadows"
+              name="userTypePedido"
+              required
+            />
+            <label for="checkBoxPedido" class="toggleButton"></label>
+            <label>No</label>
+          </div>
+
+          <div class="formBox">
+            <label for="userDirPedido">Dirección de entrega</label>
+            <input
+              type="text"
+              id="userDirPedido"
+              class="formInputText shadows"
+              name="userDirPedido"
+              placeholder="Ingrese su dirección de entega"
+              required
+            />
+          </div>
+
+          <div class="centered">
+            <button class="standardButton shadows" type="submit">
+              <a class="standardButtonText"> Continuar</a>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
